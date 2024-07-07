@@ -1,4 +1,4 @@
-# Project Name Backend
+# Project Name Sales Sage Backend
 
 This project is meant for the backend server where it runs both our ASR, ToDo list recommendation, Sentimental analysis. Through using Flask for api integration with our React web application.
 
