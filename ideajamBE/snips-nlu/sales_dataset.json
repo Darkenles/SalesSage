@@ -1,0 +1,454 @@
+{
+  "entities": {
+    "actionDetails": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "Send a product brochure"
+        },
+        {
+          "synonyms": [],
+          "value": "Email the pricing details"
+        },
+        {
+          "synonyms": [],
+          "value": "Arrange a demo"
+        },
+        {
+          "synonyms": [],
+          "value": "Set up a meeting"
+        },
+        {
+          "synonyms": [
+            "send brochure"
+          ],
+          "value": "Send a product brochure"
+        },
+        {
+          "synonyms": [
+            "email prices"
+          ],
+          "value": "Email the pricing details"
+        },
+        {
+          "synonyms": [
+            "arrange demonstration"
+          ],
+          "value": "Arrange a demo"
+        },
+        {
+          "synonyms": [
+            "schedule meeting"
+          ],
+          "value": "Set up a meeting"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "customerName": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "John Doe"
+        },
+        {
+          "synonyms": [],
+          "value": "Jane Smith"
+        },
+        {
+          "synonyms": [],
+          "value": "Mike Johnson"
+        },
+        {
+          "synonyms": [],
+          "value": "Emily Davis"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "date": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "July 5th"
+        },
+        {
+          "synonyms": [],
+          "value": "July 6th"
+        },
+        {
+          "synonyms": [],
+          "value": "Monday"
+        },
+        {
+          "synonyms": [],
+          "value": "next Friday"
+        },
+        {
+          "synonyms": [
+            "5th of July"
+          ],
+          "value": "July 5th"
+        },
+        {
+          "synonyms": [
+            "6th of July"
+          ],
+          "value": "July 6th"
+        },
+        {
+          "synonyms": [
+            "Mon"
+          ],
+          "value": "Monday"
+        },
+        {
+          "synonyms": [
+            "Friday next week"
+          ],
+          "value": "next Friday"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "product": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "laptops"
+        },
+        {
+          "synonyms": [],
+          "value": "smartphones"
+        },
+        {
+          "synonyms": [],
+          "value": "tablets"
+        },
+        {
+          "synonyms": [],
+          "value": "monitors"
+        },
+        {
+          "synonyms": [
+            "notebook computers",
+            "portable computers"
+          ],
+          "value": "laptops"
+        },
+        {
+          "synonyms": [
+            "mobile phones",
+            "cell phones"
+          ],
+          "value": "smartphones"
+        },
+        {
+          "synonyms": [
+            "tablet computers",
+            "slates"
+          ],
+          "value": "tablets"
+        },
+        {
+          "synonyms": [
+            "screens",
+            "displays"
+          ],
+          "value": "monitors"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "time": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "3 PM"
+        },
+        {
+          "synonyms": [],
+          "value": "10 AM"
+        },
+        {
+          "synonyms": [],
+          "value": "2 PM"
+        },
+        {
+          "synonyms": [],
+          "value": "1 PM"
+        },
+        {
+          "synonyms": [
+
+          ],
+          "value": "3 PM"
+        },
+        {
+          "synonyms": [
+            
+          ],
+          "value": "10 AM"
+        },
+        {
+          "synonyms": [
+            
+          ],
+          "value": "2 PM"
+        },
+        {
+          "synonyms": [
+            
+          ],
+          "value": "1 PM"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    }
+  },
+  "intents": {
+    "addProductInterest": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Sales Rep Hello "
+            },
+            {
+              "entity": "customerName",
+              "slot_name": "customerName",
+              "text": "John"
+            },
+            {
+              "text": ", how are you? Customer Hi, I'm good. I wanted to know more about your "
+            },
+            {
+              "entity": "product",
+              "slot_name": "product",
+              "text": "laptops"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Customer Hi, I'm interested in your "
+            },
+            {
+              "entity": "product",
+              "slot_name": "product",
+              "text": "smartphones"
+            },
+            {
+              "text": ". Sales Rep Sure, we have the latest models available."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Customer Can you tell me about your "
+            },
+            {
+              "entity": "product",
+              "slot_name": "product",
+              "text": "tablets"
+            },
+            {
+              "text": "? Sales Rep Of course, we have several options."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Sales Rep Are you looking for anything specific? Customer Yes, I'm looking at your "
+            },
+            {
+              "entity": "product",
+              "slot_name": "product",
+              "text": "monitors"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      ]
+    },
+    "logActionItem": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Customer Can you send me a brochure? Sales Rep Sure, I'll send a product brochure to "
+            },
+            {
+              "entity": "customerName",
+              "slot_name": "customerName",
+              "text": "John Doe"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Customer I need the pricing details. Sales Rep I'll email the pricing details to "
+            },
+            {
+              "entity": "customerName",
+              "slot_name": "customerName",
+              "text": "Jane Smith"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Sales Rep Would you like a demo of the product? Customer Yes, please. Sales Rep I'll arrange a demo for "
+            },
+            {
+              "entity": "customerName",
+              "slot_name": "customerName",
+              "text": "Mike Johnson"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Customer Can we set up a meeting? Sales Rep Absolutely, I'll set up a meeting with "
+            },
+            {
+              "entity": "customerName",
+              "slot_name": "customerName",
+              "text": "Emily Davis"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      ]
+    },
+    "scheduleFollowUp": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Sales Rep Can I schedule a follow-up call next week? Customer Sure, how about "
+            },
+            {
+              "entity": "date",
+              "slot_name": "date",
+              "text": "Tuesday"
+            },
+            {
+              "text": " at "
+            },
+            {
+              "entity": "time",
+              "slot_name": "time",
+              "text": "3 PM"
+            },
+            {
+              "text": "? Sales Rep That works."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Sales Rep When would you like to have a follow-up? Customer Let's do it on "
+            },
+            {
+              "entity": "date",
+              "slot_name": "date",
+              "text": "Friday"
+            },
+            {
+              "text": " at "
+            },
+            {
+              "entity": "time",
+              "slot_name": "time",
+              "text": "10 AM"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Customer Can we have another call on "
+            },
+            {
+              "entity": "date",
+              "slot_name": "date",
+              "text": "Monday"
+            },
+            {
+              "text": " at "
+            },
+            {
+              "entity": "time",
+              "slot_name": "time",
+              "text": "2 PM"
+            },
+            {
+              "text": "? Sales Rep Yes, that can be arranged."
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Sales Rep Would you be available for a follow-up on "
+            },
+            {
+              "entity": "date",
+              "slot_name": "date",
+              "text": "next Friday"
+            },
+            {
+              "text": " at "
+            },
+            {
+              "entity": "time",
+              "slot_name": "time",
+              "text": "1 PM"
+            },
+            {
+              "text": "? Customer Yes, that sounds good."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}

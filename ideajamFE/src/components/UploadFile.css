@@ -1,0 +1,40 @@
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  input[type="file"] {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .result-section {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  .result-section h2 {
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+  
+  .result-text {
+    background-color: #6d6d6d;
+    font-size: 30px;
+    padding: 25px;
+    border-radius: 4px;
+  }

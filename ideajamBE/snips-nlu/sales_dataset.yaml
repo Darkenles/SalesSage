@@ -1,0 +1,103 @@
+---
+type: intent
+name: addProductInterest
+slots:
+  - name: customerName
+    entity: customerName
+  - name: product
+    entity: product
+utterances:
+  - Sales Rep Hello [customerName](John), how are you? Customer Hi, I'm good. I wanted to know more about your [product](laptops).
+  - Customer Hi, I'm interested in your [product](smartphones). Sales Rep Sure, we have the latest models available.
+  - Customer Can you tell me about your [product](tablets)? Sales Rep Of course, we have several options.
+  - Sales Rep Are you looking for anything specific? Customer Yes, I'm looking at your [product](monitors).
+---
+type: intent
+name: scheduleFollowUp
+slots:
+  - name: customerName
+    entity: customerName
+  - name: date
+    entity: date
+  - name: time
+    entity: time
+utterances:
+  - Sales Rep Can I schedule a follow-up call next week? Customer Sure, how about [date](Tuesday) at [time](3 PM)? Sales Rep That works.
+  - Sales Rep When would you like to have a follow-up? Customer Let's do it on [date](Friday) at [time](10 AM).
+  - Customer Can we have another call on [date](Monday) at [time](2 PM)? Sales Rep Yes, that can be arranged.
+  - Sales Rep Would you be available for a follow-up on [date](next Friday) at [time](1 PM)? Customer Yes, that sounds good.
+---
+type: intent
+name: logActionItem
+slots:
+  - name: customerName
+    entity: customerName
+  - name: actionDetails
+    entity: actionDetails
+utterances:
+  - Customer Can you send me a brochure? Sales Rep Sure, I'll send a product brochure to [customerName](John Doe).
+  - Customer I need the pricing details. Sales Rep I'll email the pricing details to [customerName](Jane Smith).
+  - Sales Rep Would you like a demo of the product? Customer Yes, please. Sales Rep I'll arrange a demo for [customerName](Mike Johnson).
+  - Customer Can we set up a meeting? Sales Rep Absolutely, I'll set up a meeting with [customerName](Emily Davis).
+---
+type: entity
+name: customerName
+automatically_extensible: yes
+values:
+  - John Doe
+  - Jane Smith
+  - Mike Johnson
+  - Emily Davis
+  - SPEAKER_00
+---
+type: entity
+name: product
+automatically_extensible: yes
+values:
+  - laptops
+  - smartphones
+  - tablets
+  - monitors
+  - [laptops, notebook computers, portable computers]
+  - [smartphones, mobile phones, cell phones]
+  - [tablets, tablet computers, slates]
+  - [monitors, screens, displays]
+---
+type: entity
+name: date
+automatically_extensible: yes
+values:
+  - July 5th
+  - July 6th
+  - Monday
+  - next Friday
+  - [July 5th, 5th of July]
+  - [July 6th, 6th of July]
+  - [Monday, Mon]
+  - [next Friday, Friday next week]
+---
+type: entity
+name: time
+automatically_extensible: yes
+values:
+  - 3 PM
+  - 10 AM
+  - 2 PM
+  - 1 PM
+  - [3 PM, 15:00]
+  - [10 AM, 10:00]
+  - [2 PM, 14:00]
+  - [1 PM, 13:00]
+---
+type: entity
+name: actionDetails
+automatically_extensible: yes
+values:
+  - Send a product brochure
+  - Email the pricing details
+  - Arrange a demo
+  - Set up a meeting
+  - [Send a product brochure, send brochure]
+  - [Email the pricing details, email prices]
+  - [Arrange a demo, arrange demonstration]
+  - [Set up a meeting, schedule meeting]

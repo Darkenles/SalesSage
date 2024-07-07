@@ -1,0 +1,9 @@
+venv/
+model_data/
+_pycache_/
+__pycache__/run_whisperX.cpython-39.pyc
+whisperX/
+uploads/The_single_most_important_thing_if_youre_giving_a_short_speech.mp3
+__pycache__/run_whisperX.cpython-311.pyc
+snips-nlu/snips-nlu.txt
+uploads/Business_English_conversation_Sales_meeting.mp3
